@@ -1,813 +1,584 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pertencer — Centro de Neurodesenvolvimento e Reabilitação</title>
-  <meta name="description"
-    content="Pertencer — Centro de Neurodesenvolvimento e Reabilitação em Guapimirim/RJ. Fonoaudiologia, Terapia Ocupacional, Fisioterapia, Psicologia, Psicopedagogia, Psicomotricidade e Avaliação Neuropsicológica.">
-  <meta property="og:title" content="Pertencer — Centro de Neurodesenvolvimento e Reabilitação">
-  <meta property="og:description"
-    content="Cuidado individualizado, ético e baseado em evidências para crianças, adolescentes e suas famílias em Guapimirim/RJ.">
-  <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Mulish:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pertencer — Centro de Neurodesenvolvimento e Reabilitação</title>
+<meta name="description" content="Pertencer — Centro de Neurodesenvolvimento e Reabilitação em Guapimirim/RJ. Fonoaudiologia, Terapia Ocupacional, Fisioterapia, Psicologia, Psicopedagogia, Psicomotricidade e Avaliação Neuropsicológica.">
+<meta property="og:title" content="Pertencer — Centro de Neurodesenvolvimento e Reabilitação">
+<meta property="og:description" content="Cuidado individualizado, ético e baseado em evidências para crianças e adolescentes em Guapimirim/RJ.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Recoleta — fonte orgânica usada na identidade Pertencer */
+  @font-face {
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/coollabsio/fonts@latest/Recoleta/Recoleta-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/coollabsio/fonts@latest/Recoleta/Recoleta-Bold.woff2') format('woff2');
+  }
+</style>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Recoleta via @font-face — fallback para Georgia enquanto carrega */
+  @font-face {
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Georgia Bold'), local('Georgia');
+  }
+</style>
 </head>
-
 <body>
 
-  <!-- ===================== HEADER ===================== -->
-  <header id="header">
-    <div class="nav">
-      <a href="#topo" class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M12 21.7C5.4 17 2 12.9 2 9.5 2 6 4.7 4 7.5 4c1.7 0 3.3.8 4.5 2.1C13.2 4.8 14.8 4 16.5 4 19.3 4 22 6 22 9.5c0 3.4-3.4 7.5-10 12.2z" />
-          </svg>
-        </div>
+<!-- ===================== HEADER ===================== -->
+<header id="header">
+  <div class="nav">
+    <a href="#topo" class="logo-wrap">
+      <img class="logo-img" src="imagens/logo_colorido.jpg" alt="Logo Pertencer">
+      <div class="logo-txt">
         Pertencer
-      </a>
-      <nav>
+        <small>Neurodesenvolvimento &amp; Reabilitação</small>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#areas">Especialidades</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5521977027638" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+      Agendar consulta
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="close-btn" id="closeMenu" aria-label="Fechar">✕</button>
+  <img class="mob-logo" src="imagens/logo_colorido.jpg" alt="Logo Pertencer">
+  <ul>
+    <li><a href="#sobre">Sobre nós</a></li>
+    <li><a href="#areas">Especialidades</a></li>
+    <li><a href="#equipe">Nossa equipe</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#valores">Missão e valores</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="mob-wa" href="https://wa.me/5521977027638" target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+    Falar no WhatsApp
+  </a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow rv">Guapimirim · RJ</span>
+      <h1 class="rv" data-delay="1">
+        Onde cada criança encontra seu
+        <em>lugar de pertencer.</em>
+      </h1>
+      <p class="lead rv" data-delay="2">Cuidado individualizado, ético e baseado em evidências científicas — para crianças, adolescentes e suas famílias. Da avaliação ao acompanhamento, com equipe qualificada e um olhar que acolhe desde o primeiro contato.</p>
+      <div class="hero-ctas rv" data-delay="3">
+        <a class="btn-p" href="https://wa.me/5521977027638?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Pertencer." target="_blank" rel="noopener">Agendar avaliação →</a>
+        <a class="btn-g" href="#areas">Ver especialidades</a>
+      </div>
+      <div class="hero-stats rv" data-delay="4">
+        <div><strong>7+</strong><span>Especialidades integradas</span></div>
+        <div><strong>9</strong><span>Terapeutas qualificados</span></div>
+        <div><strong>3 anos</strong><span>Transformando vidas</span></div>
+      </div>
+    </div>
+    <div class="hero-art rv" data-delay="2">
+      <div class="hero-logo-big">
+        <img src="imagens/logo_principal.jpg" alt="Logotipo Pertencer">
+      </div>
+      <div class="chip c1">
+        <div class="chip-icon">🤍</div>
+        <h5>Família como parceira</h5>
+        <p>Orientação em cada etapa</p>
+      </div>
+      <div class="chip c2">
+        <div class="chip-icon">✦</div>
+        <h5>Baseado em evidências</h5>
+        <p>Ciência e amorosidade</p>
+      </div>
+      <div class="chip c3">
+        <div class="chip-icon">🌱</div>
+        <h5>Olhar integral</h5>
+        <p>Cada criança é única</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<section class="sobre" id="sobre">
+  <div class="wrap sobre-grid">
+    <div class="sobre-img-col rv">
+      <div class="sobre-main">
+        <!-- Substitua por: <img src="imagens/sobre.jpg" alt="Equipe Pertencer"> -->
+        <div class="img-ph">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zM7 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zM12 2C9.2 2 7 4.2 7 7s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>
+          <span>FOTO DA CLÍNICA / EQUIPE</span>
+        </div>
+      </div>
+      <div class="sobre-badge">
+        <strong>+3</strong>
+        <span>anos de<br>cuidado</span>
+      </div>
+      <div class="sobre-logo">
+        <img src="imagens/logo_colorido.jpg" alt="Logo Pertencer">
+      </div>
+    </div>
+    <div class="sobre-text">
+      <span class="tag rv">Nossa história</span>
+      <h2 class="rv" data-delay="1">Um sonho que nasceu da amizade e do mesmo jeito de cuidar.</h2>
+      <blockquote class="quote-block rv" data-delay="2">
+        "Mais do que construir uma clínica, sonhávamos em criar um lugar onde cada pessoa fosse acolhida em sua singularidade."
+      </blockquote>
+      <p class="rv" data-delay="3">Escolhemos o nome <strong>Pertencer</strong> porque acreditamos que essa é uma das necessidades mais profundas do ser humano. Antes de qualquer diagnóstico, desafio ou conquista, existe uma pessoa que deseja ser vista, compreendida, valorizada e acolhida.</p>
+      <p class="rv" data-delay="4">É nesse encontro que o desenvolvimento ganha sentido — o cuidado se transforma em vínculo, confiança e novas possibilidades para a criança, o adolescente e toda a sua família.</p>
+      <div class="founders rv" data-delay="5">
+        <div class="founders-av">
+          <div>A</div><div>C</div><div>+</div>
+        </div>
+        <p><strong>Fundado por três profissionais</strong>que compartilham os mesmos valores e a mesma forma de cuidar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÁREAS ===================== -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Especialidades</span>
+      <h2>Cuidado completo, do diagnóstico ao desenvolvimento.</h2>
+      <p>Reunimos especialidades complementares que atuam de forma integrada, oferecendo atendimento baseado em evidências e planejado para cada criança e adolescente.</p>
+    </div>
+    <div class="area-grid">
+      <div class="area-card rv" data-delay="1">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">🗣️</span>
+        <h3>Fonoaudiologia</h3>
+        <p>Avaliação, prevenção e reabilitação da comunicação humana: linguagem oral e escrita, fala, voz, motricidade orofacial e alimentação.</p>
+      </div>
+      <div class="area-card rv" data-delay="2">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">✋</span>
+        <h3>Terapia Ocupacional</h3>
+        <p>Promoção da autonomia e participação no cotidiano, desenvolvendo habilidades sensoriais, motoras, cognitivas e funcionais.</p>
+      </div>
+      <div class="area-card rv" data-delay="3">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">🏃</span>
+        <h3>Fisioterapia</h3>
+        <p>Prevenção, habilitação e reabilitação das funções motoras, promovendo movimento, funcionalidade e independência.</p>
+      </div>
+      <div class="area-card rv" data-delay="1">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">💬</span>
+        <h3>Psicologia</h3>
+        <p>Atendimento para crianças, adolescentes e adultos, com saúde mental, desenvolvimento emocional e orientação parental às famílias.</p>
+      </div>
+      <div class="area-card rv" data-delay="2">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">📚</span>
+        <h3>Psicopedagogia</h3>
+        <p>Avaliação e intervenção nos processos de aprendizagem, identificando potencialidades e dificuldades acadêmicas e cognitivas.</p>
+      </div>
+      <div class="area-card rv" data-delay="3">
+        <div class="area-color-bar"></div>
+        <span class="area-icon">🧩</span>
+        <h3>Psicomotricidade</h3>
+        <p>Estimulação da integração entre corpo, movimento, emoção e cognição, favorecendo autonomia e interação com o ambiente.</p>
+      </div>
+      <div class="area-full rv">
+        <div class="area-card">
+          <span class="area-icon">🧠</span>
+          <div>
+            <div class="area-color-bar"></div>
+            <h3>Avaliação Neuropsicológica</h3>
+            <p>Avaliação especializada das funções cognitivas, emocionais e comportamentais — contribui para diagnóstico e planejamento de intervenções individualizadas para TDAH, TEA, dificuldades de aprendizagem e outras condições.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EQUIPE ===================== -->
+<section class="equipe" id="equipe">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Nossa equipe</span>
+      <h2>Profissionais qualificados que compartilham os mesmos valores.</h2>
+      <p>Cada terapeuta foi escolhido não apenas pelo currículo, mas pela sensibilidade, compromisso e cuidado com que trata cada criança e cada família.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card rv" data-delay="1">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Fonoaudiologia</span>
+        </div>
+        <div class="team-info">
+          <h4>Fonoaudióloga</h4>
+          <p class="cref">CRFa · Esp. em Linguagem Infantil</p>
+          <p>Avaliação e reabilitação de linguagem, fala, voz e motricidade orofacial com abordagem individualizada.</p>
+        </div>
+      </div>
+      <div class="team-card rv" data-delay="2">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Terapia Ocupacional</span>
+        </div>
+        <div class="team-info">
+          <h4>Terapeuta Ocupacional</h4>
+          <p class="cref">CREFITO · Esp. em Integração Sensorial</p>
+          <p>Integração sensorial, desenvolvimento infantil e habilidades funcionais para o cotidiano.</p>
+        </div>
+      </div>
+      <div class="team-card rv" data-delay="3">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Psicologia</span>
+        </div>
+        <div class="team-info">
+          <h4>Psicóloga</h4>
+          <p class="cref">CRP · Esp. em Neuropsicologia</p>
+          <p>Atendimento infantil, orientação parental e avaliação neuropsicológica com escuta qualificada.</p>
+        </div>
+      </div>
+      <div class="team-card rv" data-delay="1">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Fisioterapia</span>
+        </div>
+        <div class="team-info">
+          <h4>Fisioterapeuta</h4>
+          <p class="cref">CREFITO · Esp. em Fisioterapia Pediátrica</p>
+          <p>Reabilitação motora infantil com foco em desenvolvimento, independência e qualidade de vida.</p>
+        </div>
+      </div>
+      <div class="team-card rv" data-delay="2">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Psicopedagogia</span>
+        </div>
+        <div class="team-info">
+          <h4>Psicopedagoga</h4>
+          <p class="cref">Esp. em Dificuldades de Aprendizagem</p>
+          <p>Avaliação e intervenção nos processos de aprendizagem, com foco em potencialidades e competências.</p>
+        </div>
+      </div>
+      <div class="team-card rv" data-delay="3">
+        <div class="team-photo">
+          <div class="team-photo-ph">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <span>FOTO DO PROFISSIONAL</span>
+          </div>
+          <span class="team-spec-tag">Psicomotricidade</span>
+        </div>
+        <div class="team-info">
+          <h4>Psicomotricista</h4>
+          <p class="cref">ABP · Esp. em Desenvolvimento Infantil</p>
+          <p>Integração entre corpo, movimento e emoção para favorecer o desenvolvimento global e a autonomia.</p>
+        </div>
+      </div>
+    </div>
+    <div class="team-note rv">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <p><strong>Como adicionar as fotos reais:</strong> Substitua cada div <code>.team-photo-ph</code> por uma tag <code>&lt;img src="imagens/nome-do-terapeuta.jpg" alt="Nome"&gt;</code> dentro da div <code>.team-photo</code>. Atualize também nome, registro e mini-bio em cada cartão.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIFERENCIAIS ===================== -->
+<section class="diferenciais" id="diferenciais">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Por que a Pertencer</span>
+      <h2>O que faz do nosso cuidado algo diferente.</h2>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-card rv" data-delay="1"><span class="dif-num">01</span><h4>Cuidado individualizado</h4><p>Atendimentos planejados conforme as necessidades, potencialidades e momento de desenvolvimento de cada criança.</p></div>
+      <div class="dif-card rv" data-delay="2"><span class="dif-num">02</span><h4>Baseado em evidências</h4><p>Atuação fundamentada em conhecimento científico atualizado — intervenções seguras, éticas e eficazes.</p></div>
+      <div class="dif-card rv" data-delay="3"><span class="dif-num">03</span><h4>Olhar integral</h4><p>Cada criança é vista em sua totalidade, respeitando história, contexto e singularidades.</p></div>
+      <div class="dif-card rv" data-delay="4"><span class="dif-num">04</span><h4>Família como parceira</h4><p>Orientação, escuta e participação ativa das famílias em todo o processo terapêutico.</p></div>
+      <div class="dif-card rv" data-delay="1"><span class="dif-num">05</span><h4>Equipe qualificada</h4><p>Profissionais com formação sólida, atualização contínua e, acima de tudo, sensibilidade no cuidar.</p></div>
+      <div class="dif-card rv" data-delay="2"><span class="dif-num">06</span><h4>Ambiente que acolhe</h4><p>Espaço pensado para que todos se sintam seguros, respeitados e pertencentes desde o primeiro contato.</p></div>
+      <div class="dif-card rv" data-delay="3"><span class="dif-num">07</span><h4>Desenvolvimento com propósito</h4><p>Mais que metas terapêuticas — buscamos autonomia, participação e qualidade de vida.</p></div>
+      <div class="dif-card rv" data-delay="4"><span class="dif-num">08</span><h4>Equipe interdisciplinar</h4><p>Especialidades que dialogam entre si, promovendo cuidado integrado e mais eficaz para cada criança.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSÃO VISÃO VALORES ===================== -->
+<section class="mvv" id="valores">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Missão · Visão · Valores</span>
+      <h2>O que guia tudo o que fazemos.</h2>
+      <p>Cada atendimento, cada decisão e cada vínculo que construímos são reflexo do propósito que nos une.</p>
+    </div>
+    <div class="mvv-grid">
+      <div class="mvv-card rv" data-delay="1">
+        <h3>Missão</h3>
+        <p>Fazer do cuidado um encontro entre ciência e humanidade, para que cada pessoa desenvolva suas potencialidades, fortaleça sua autonomia e descubra, todos os dias, que há um lugar onde ela é acolhida, valorizada e pertence.</p>
+      </div>
+      <div class="mvv-card rv" data-delay="2">
+        <h3>Visão</h3>
+        <p>Ser reconhecida por transformar cuidado em significado, construindo um espaço onde o desenvolvimento acontece com excelência e cada conquista reafirma aquilo em que acreditamos: todo ser humano merece crescer sentindo que pertence.</p>
+      </div>
+    </div>
+    <div class="valores-grid">
+      <div class="valor rv" data-delay="1"><span class="valor-ico">🏠</span><strong>Pertencimento</strong><span>Todo ser humano merece ser acolhido e valorizado.</span></div>
+      <div class="valor rv" data-delay="2"><span class="valor-ico">🤝</span><strong>Humanização</strong><span>Cuidamos com sensibilidade, empatia e amorosidade.</span></div>
+      <div class="valor rv" data-delay="3"><span class="valor-ico">⭐</span><strong>Excelência</strong><span>Conhecimento, atualização e compromisso com qualidade.</span></div>
+      <div class="valor rv" data-delay="4"><span class="valor-ico">✨</span><strong>Singularidade</strong><span>Cada trajetória é única e merece ser respeitada.</span></div>
+      <div class="valor rv" data-delay="1"><span class="valor-ico">⚖️</span><strong>Ética</strong><span>Responsabilidade, transparência e integridade.</span></div>
+      <div class="valor rv" data-delay="2"><span class="valor-ico">💪</span><strong>Compromisso</strong><span>Cuidado intencional centrado no desenvolvimento.</span></div>
+      <div class="valor rv" data-delay="3"><span class="valor-ico">🔗</span><strong>Colaboração</strong><span>Diálogo entre profissionais, famílias e comunidade.</span></div>
+      <div class="valor rv" data-delay="4"><span class="valor-ico">🌱</span><strong>Esperança</strong><span>Acreditamos no potencial humano em cada conquista.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section class="depoimentos" id="depoimentos">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Depoimentos</span>
+      <h2>O que as famílias dizem sobre a Pertencer.</h2>
+    </div>
+    <div class="dep-grid">
+      <div class="dep-card rv" data-delay="1">
+        <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>"Desde o primeiro contato me senti acolhida. A equipe cuida do meu filho com uma atenção e sensibilidade que eu nunca havia encontrado antes. O desenvolvimento dele foi surpreendente."</p>
+        <div class="dep-author"><div class="dep-av">M</div><div><strong>Mãe do João, 6 anos</strong><span>Fonoaudiologia</span></div></div>
+      </div>
+      <div class="dep-card rv" data-delay="2">
+        <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>"A Pertencer mudou a nossa rotina em família. Além de cuidar da minha filha, as profissionais nos orientam em cada passo — nos fazem sentir parte do processo. É o lugar certo."</p>
+        <div class="dep-author"><div class="dep-av">A</div><div><strong>Família Oliveira</strong><span>Terapia Ocupacional</span></div></div>
+      </div>
+      <div class="dep-card rv" data-delay="3">
+        <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p>"Após a avaliação neuropsicológica e o acompanhamento psicopedagógico, meu filho hoje ama aprender. Gratidão enorme a toda a equipe da Pertencer."</p>
+        <div class="dep-author"><div class="dep-av">R</div><div><strong>Pai do Miguel, 9 anos</strong><span>Avaliação Neuropsicológica</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Dúvidas frequentes</span>
+      <h2>Perguntas que as famílias costumam fazer.</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item rv" data-delay="1">
+        <button class="faq-q" aria-expanded="false">Como funciona a primeira consulta?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>O primeiro atendimento é uma avaliação inicial onde o profissional conhece a criança, a família e as principais queixas ou objetivos. A partir daí, é elaborado um plano de cuidado individualizado.</p></div>
+      </div>
+      <div class="faq-item rv" data-delay="2">
+        <button class="faq-q" aria-expanded="false">Atendem por convênio ou apenas particular?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Atualmente a Pertencer realiza atendimentos particulares. Entre em contato pelo WhatsApp para verificar valores, pacotes e possibilidades de pagamento.</p></div>
+      </div>
+      <div class="faq-item rv" data-delay="1">
+        <button class="faq-q" aria-expanded="false">A partir de qual idade atendem?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Atendemos bebês, crianças e adolescentes — a maior parte do nosso público é infantojuvenil. Algumas especialidades também atendem adultos. Entre em contato para verificar casos específicos.</p></div>
+      </div>
+      <div class="faq-item rv" data-delay="2">
+        <button class="faq-q" aria-expanded="false">O que é a Avaliação Neuropsicológica?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>É uma avaliação especializada das funções cognitivas, emocionais e comportamentais, por meio de testes padronizados. Indicada para diagnóstico de TDAH, TEA, dificuldades de aprendizagem, entre outros.</p></div>
+      </div>
+      <div class="faq-item rv" data-delay="1">
+        <button class="faq-q" aria-expanded="false">Os pais participam das sessões?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>Acreditamos que a família é parceira no processo. Dependendo da especialidade e da faixa etária, os pais participam de parte das sessões e recebem orientações regulares ao longo do acompanhamento.</p></div>
+      </div>
+      <div class="faq-item rv" data-delay="2">
+        <button class="faq-q" aria-expanded="false">Como agendar uma consulta?<span class="faq-arrow">+</span></button>
+        <div class="faq-a"><p>O agendamento é feito pelo WhatsApp ou pelo formulário de contato nesta página. Nossa equipe retorna o mais breve possível para verificar disponibilidade e orientar os próximos passos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA STRIP ===================== -->
+<div class="cta-strip">
+  <div class="wrap rv">
+    <h2>Pronto para dar o primeiro passo?</h2>
+    <p>Fale agora com a nossa equipe pelo WhatsApp. Estamos prontos para ouvir a história de cada família e encontrar o melhor caminho juntos.</p>
+    <a class="btn-p" href="https://wa.me/5521977027638?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Pertencer." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+  </div>
+</div>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="tag">Entre em contato</span>
+      <h2>Estamos aqui para te acolher.</h2>
+      <p>Fale com a nossa equipe pelos canais abaixo ou preencha o formulário — retornamos em breve.</p>
+    </div>
+    <div class="contato-grid">
+      <div class="info-block rv">
+        <div class="info-row"><div class="info-ic">📍</div><div><h5>Endereço</h5><p>R. Buganvília, 91 — Lote 15, Quadra A<br>Centro, Guapimirim – RJ, 25940-000</p></div></div>
+        <div class="info-row"><div class="info-ic">📞</div><div><h5>Telefone / WhatsApp</h5><a href="tel:+5521977027638">+55 21 97702-7638</a></div></div>
+        <div class="info-row"><div class="info-ic">✉️</div><div><h5>E-mail</h5><a href="mailto:clinica@pertencer.me">clinica@pertencer.me</a></div></div>
+        <div class="info-row"><div class="info-ic">⏰</div><div><h5>Agendamento</h5><p>Via WhatsApp, e-mail ou pelo formulário ao lado</p></div></div>
+        <div class="socials">
+          <a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/5521977027638" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+          </a>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d-42.9887!3d-22.5282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMxJzQxLjYiUyA0MsKwNTknMTkuMyJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Pertencer"></iframe>
+        </div>
+      </div>
+      <div class="cform rv" data-delay="1">
+        <h3>Envie uma mensagem</h3>
+        <p class="sub">Preencha e retornamos o quanto antes.</p>
+        <form id="cForm">
+          <div class="field-row">
+            <div class="field"><label for="f-nome">Nome completo *</label><input type="text" id="f-nome" name="nome" required placeholder="Seu nome"></div>
+            <div class="field"><label for="f-tel">WhatsApp *</label><input type="tel" id="f-tel" name="tel" required placeholder="(21) 00000-0000"></div>
+          </div>
+          <div class="field">
+            <label for="f-esp">Especialidade de interesse</label>
+            <select id="f-esp" name="esp">
+              <option value="">Selecione...</option>
+              <option>Fonoaudiologia</option>
+              <option>Terapia Ocupacional</option>
+              <option>Fisioterapia</option>
+              <option>Psicologia</option>
+              <option>Psicopedagogia</option>
+              <option>Psicomotricidade</option>
+              <option>Avaliação Neuropsicológica</option>
+              <option>Não sei ainda</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="msg" placeholder="Conte brevemente o que você busca para seu filho(a)..."></textarea></div>
+          <button type="submit" class="submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="fn">Ao enviar, você será redirecionado para o WhatsApp com sua mensagem pré-preenchida.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo-wrap">
+          <img class="foot-logo-img" src="imagens/logo_branco.jpg" alt="Logo Pertencer">
+          <span class="foot-logo-txt">Pertencer</span>
+        </div>
+        <p class="foot-desc">Centro de Neurodesenvolvimento e Reabilitação. Cuidado individualizado e baseado em evidências para crianças, adolescentes e suas famílias em Guapimirim – RJ.</p>
+        <div class="foot-soc">
+          <a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/5521977027638" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Navegação</h5>
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
           <li><a href="#areas">Especialidades</a></li>
-          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#equipe">Nossa equipe</a></li>
           <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#valores">Missão e valores</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
-      <a class="nav-cta-d" href="https://wa.me/5521977027638" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-          <path
-            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668.11.061.231.09.352.09.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0zm0 21.618c-1.759 0-3.458-.483-4.931-1.396l-.356-.212-3.665 1.197 1.186-3.572-.23-.366C2.95 15.668 2.382 13.877 2.382 12 2.382 6.349 6.95 1.778 12 1.778c5.05 0 9.618 4.571 9.618 10.222 0 5.651-4.568 10.618-9.618 10.618z" />
-        </svg>
-        Agendar consulta
-      </a>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <div class="mob-overlay" id="mobOverlay"></div>
-  <div class="mob-menu" id="mobMenu">
-    <button class="close-btn" id="closeMenu" aria-label="Fechar">✕</button>
-    <ul>
-      <li><a href="#sobre">Sobre nós</a></li>
-      <li><a href="#areas">Especialidades</a></li>
-      <li><a href="#equipe">Nossa equipe</a></li>
-      <li><a href="#diferenciais">Diferenciais</a></li>
-      <li><a href="#valores">Missão e valores</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <a class="mob-wa" href="https://wa.me/5521977027638" target="_blank">💬 Agendar pelo WhatsApp</a>
-  </div>
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="topo">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow rv">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-            <circle cx="6" cy="6" r="6" />
-          </svg>
-          Guapimirim – RJ
-        </span>
-        <h1 class="rv" data-delay="1">Onde cada criança encontra seu <em>lugar de pertencer.</em></h1>
-        <p class="lead rv" data-delay="2">Cuidado individualizado em Fonoaudiologia, Terapia Ocupacional, Fisioterapia,
-          Psicologia, Psicopedagogia, Psicomotricidade e Avaliação Neuropsicológica — com equipe qualificada e olhar que
-          acolhe desde o primeiro contato.</p>
-        <div class="hero-ctas rv" data-delay="3">
-          <a class="btn-p" href="https://wa.me/5521977027638" target="_blank" rel="noopener">Agendar avaliação →</a>
-          <a class="btn-g" href="#areas">Ver especialidades</a>
-        </div>
-        <div class="hero-stats rv" data-delay="4">
-          <div><strong>7+</strong><span>Especialidades integradas</span></div>
-          <div><strong>9</strong><span>Terapeutas qualificados</span></div>
-          <div><strong>3 anos</strong><span>De cuidado e histórias</span></div>
-        </div>
       </div>
-      <div class="hero-art rv" data-delay="2">
-        <div class="h-blob"></div>
-        <div class="h-photo">
-          <!-- Substitua por: <img src="imagens/hero.jpg" alt="Clínica Pertencer"> -->
-          <div class="h-photo-placeholder">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-            </svg>
-            <span>FOTO DA CLÍNICA</span>
-          </div>
-        </div>
-        <div class="float-card fc1">
-          <div class="fc-icon">🤍</div>
-          <h5>Família como parceira</h5>
-          <p>Orientação e escuta em cada etapa</p>
-        </div>
-        <div class="float-card fc2">
-          <div class="fc-icon">✦</div>
-          <h5>Baseado em evidências</h5>
-          <p>Ciência e amorosidade juntas</p>
-        </div>
+      <div class="foot-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="tel:+5521977027638">+55 21 97702-7638</a></li>
+          <li><a href="mailto:clinica@pertencer.me">clinica@pertencer.me</a></li>
+          <li><a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener">@pertencerme</a></li>
+          <li><a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <h5 style="margin-top:22px;">Endereço</h5>
+        <ul>
+          <li style="color:#8B82A0;font-size:.84rem;line-height:1.7;">R. Buganvília, 91 — Lote 15<br>Quadra A, Centro<br>Guapimirim – RJ, 25940-000</li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- ===================== SOBRE ===================== -->
-  <section class="sobre" id="sobre">
-    <div class="wrap sobre-grid">
-      <div class="sobre-img-wrap rv">
-        <div class="sobre-main-img">
-          <!-- Substitua por: <img src="imagens/sobre.jpg" alt="Equipe Pertencer"> -->
-          <div class="img-placeholder">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zM7 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zM12 2C9.2 2 7 4.2 7 7s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" />
-            </svg>
-            <span>FOTO DA EQUIPE / ESPAÇO</span>
-          </div>
-        </div>
-        <div class="sobre-badge">
-          <strong>+3</strong>
-          <span>anos de<br>cuidado</span>
-        </div>
-      </div>
-      <div class="sobre-text">
-        <span class="tag rv">Nossa história</span>
-        <h2 class="rv" data-delay="1">Um sonho que nasceu da amizade e do mesmo jeito de cuidar.</h2>
-        <blockquote class="quote-block rv" data-delay="2">
-          "Mais do que construir uma clínica, sonhávamos em criar um lugar onde cada pessoa fosse acolhida em sua
-          singularidade."
-        </blockquote>
-        <p class="rv" data-delay="3">Escolhemos o nome <strong>Pertencer</strong> porque acreditamos que essa é uma das
-          necessidades mais profundas do ser humano. Antes de qualquer diagnóstico, desafio ou conquista, existe uma
-          pessoa que deseja ser vista, compreendida, valorizada e acolhida.</p>
-        <p class="rv" data-delay="4">É nesse encontro que o desenvolvimento ganha sentido e o cuidado se transforma em
-          vínculo, confiança e novas possibilidades — para a criança, o adolescente e toda a sua família.</p>
-        <div class="founders rv" data-delay="5">
-          <div class="founders-avatars">
-            <div>A</div>
-            <div>C</div>
-            <div>+</div>
-          </div>
-          <p><strong>Fundado por três amigas e profissionais</strong>que compartilham os mesmos valores e a mesma forma
-            de cuidar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ÁREAS ===================== -->
-  <section class="areas" id="areas">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Especialidades</span>
-        <h2>Cuidado completo, do diagnóstico ao desenvolvimento.</h2>
-        <p>Reunimos especialidades complementares que atuam de forma integrada, oferecendo atendimento baseado em
-          evidências e planejado para cada pessoa.</p>
-      </div>
-      <div class="area-grid">
-        <div class="area-card rv" data-delay="1">
-          <div class="area-stripe"></div>
-          <span class="area-icon">🗣️</span>
-          <h3>Fonoaudiologia</h3>
-          <p>Avaliação, prevenção e reabilitação da comunicação humana: linguagem oral e escrita, fala, voz, motricidade
-            orofacial e alimentação.</p>
-        </div>
-        <div class="area-card rv" data-delay="2">
-          <div class="area-stripe"></div>
-          <span class="area-icon">✋</span>
-          <h3>Terapia Ocupacional</h3>
-          <p>Promoção da autonomia e participação no cotidiano, desenvolvendo habilidades sensoriais, motoras,
-            cognitivas e funcionais.</p>
-        </div>
-        <div class="area-card rv" data-delay="3">
-          <div class="area-stripe"></div>
-          <span class="area-icon">🏃</span>
-          <h3>Fisioterapia</h3>
-          <p>Prevenção, habilitação e reabilitação das funções motoras, promovendo movimento, funcionalidade e
-            independência.</p>
-        </div>
-        <div class="area-card rv" data-delay="1">
-          <div class="area-stripe"></div>
-          <span class="area-icon">💬</span>
-          <h3>Psicologia</h3>
-          <p>Atendimento para crianças, adolescentes e adultos, com saúde mental, desenvolvimento emocional e orientação
-            parental às famílias.</p>
-        </div>
-        <div class="area-card rv" data-delay="2">
-          <div class="area-stripe"></div>
-          <span class="area-icon">📚</span>
-          <h3>Psicopedagogia</h3>
-          <p>Avaliação e intervenção nos processos de aprendizagem, identificando potencialidades e dificuldades
-            acadêmicas e cognitivas.</p>
-        </div>
-        <div class="area-card rv" data-delay="3">
-          <div class="area-stripe"></div>
-          <span class="area-icon">🧩</span>
-          <h3>Psicomotricidade</h3>
-          <p>Estimulação da integração entre corpo, movimento, emoção e cognição, favorecendo autonomia e interação com
-            o ambiente.</p>
-        </div>
-        <div class="area-card area-full rv">
-          <span class="area-icon" style="font-size:2rem">🧠</span>
-          <div>
-            <div class="area-stripe" style="margin-bottom:10px;"></div>
-            <h3>Avaliação Neuropsicológica</h3>
-            <p>Avaliação especializada das funções cognitivas, emocionais e comportamentais, permitindo compreensão
-              ampla do funcionamento do indivíduo. Contribui para diagnóstico e planejamento de intervenções
-              individualizadas — uma das especialidades mais buscadas para crianças em processo de diagnóstico.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== EQUIPE ===================== -->
-  <section class="equipe" id="equipe">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Nossa equipe</span>
-        <h2>Profissionais qualificados que compartilham os mesmos valores.</h2>
-        <p>Cada terapeuta foi escolhido não apenas pelo currículo, mas pela sensibilidade, compromisso e cuidado com que
-          trata cada criança e cada família.</p>
-      </div>
-      <div class="team-grid">
-        <!-- Membro 1 -->
-        <div class="team-card rv" data-delay="1">
-          <div class="team-photo">
-            <!-- Substitua por: <img src="imagens/terapeuta1.jpg" alt="Nome"> -->
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Fonoaudiologia</span>
-          </div>
-          <div class="team-info">
-            <h4>Fonoaudióloga</h4>
-            <p class="cref">CRFa · Especialista em Linguagem</p>
-            <p>Atua na avaliação e reabilitação de linguagem, fala, voz e motricidade orofacial com abordagem
-              individualizada.</p>
-          </div>
-        </div>
-        <!-- Membro 2 -->
-        <div class="team-card rv" data-delay="2">
-          <div class="team-photo">
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Terapia Ocupacional</span>
-          </div>
-          <div class="team-info">
-            <h4>Terapeuta Ocupacional</h4>
-            <p class="cref">CREFITO · Esp. em Integração Sensorial</p>
-            <p>Especialista em integração sensorial, desenvolvimento infantil e habilidades funcionais para o cotidiano.
-            </p>
-          </div>
-        </div>
-        <!-- Membro 3 -->
-        <div class="team-card rv" data-delay="3">
-          <div class="team-photo">
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Psicologia</span>
-          </div>
-          <div class="team-info">
-            <h4>Psicóloga</h4>
-            <p class="cref">CRP · Esp. em Neuropsicologia</p>
-            <p>Atendimento infantil, orientação parental e avaliação neuropsicológica com escuta qualificada.</p>
-          </div>
-        </div>
-        <!-- Membro 4 -->
-        <div class="team-card rv" data-delay="1">
-          <div class="team-photo">
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Fisioterapia</span>
-          </div>
-          <div class="team-info">
-            <h4>Fisioterapeuta</h4>
-            <p class="cref">CREFITO · Esp. em Fisioterapia Pediátrica</p>
-            <p>Reabilitação motora infantil com foco em desenvolvimento, independência e qualidade de vida.</p>
-          </div>
-        </div>
-        <!-- Membro 5 -->
-        <div class="team-card rv" data-delay="2">
-          <div class="team-photo">
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Psicopedagogia</span>
-          </div>
-          <div class="team-info">
-            <h4>Psicopedagoga</h4>
-            <p class="cref">Especialista em Dificuldades de Aprendizagem</p>
-            <p>Avaliação e intervenção nos processos de aprendizagem, com foco em potencialidades e competências
-              cognitivas.</p>
-          </div>
-        </div>
-        <!-- Membro 6 -->
-        <div class="team-card rv" data-delay="3">
-          <div class="team-photo">
-            <div class="team-photo-ph">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
-              </svg>
-              <span>FOTO DO PROFISSIONAL</span>
-            </div>
-            <span class="team-spec-tag">Psicomotricidade</span>
-          </div>
-          <div class="team-info">
-            <h4>Psicomotricista</h4>
-            <p class="cref">ABP · Esp. em Desenvolvimento Infantil</p>
-            <p>Integração corpo, movimento e emoção para favorecer o desenvolvimento global e a autonomia da criança.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="team-note rv">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 8v4l3 3" />
-        </svg>
-        <p>⚡ <strong>Dica para personalização:</strong> Substitua os cartões acima com as fotos e nomes reais de cada
-          terapeuta da equipe. Basta inserir <code>&lt;img src="imagens/nome.jpg"&gt;</code> dentro da div
-          <code>.team-photo</code> de cada cartão e atualizar os textos com nome completo, registro profissional e
-          mini-bio.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== DIFERENCIAIS ===================== -->
-  <section class="diferenciais" id="diferenciais">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Por que a Pertencer</span>
-        <h2>O que faz do nosso cuidado algo diferente.</h2>
-      </div>
-      <div class="dif-grid">
-        <div class="dif-card rv" data-delay="1">
-          <span class="dif-num">01</span>
-          <h4>Cuidado individualizado</h4>
-          <p>Cada atendimento é planejado conforme as necessidades, potencialidades e momento de desenvolvimento de cada
-            pessoa.</p>
-        </div>
-        <div class="dif-card rv" data-delay="2">
-          <span class="dif-num">02</span>
-          <h4>Baseado em evidências</h4>
-          <p>Atuação fundamentada em conhecimento científico atualizado, garantindo intervenções seguras, éticas e
-            eficazes.</p>
-        </div>
-        <div class="dif-card rv" data-delay="3">
-          <span class="dif-num">03</span>
-          <h4>Olhar integral</h4>
-          <p>Consideramos cada criança ou adolescente em sua totalidade, respeitando história, contexto e
-            singularidades.</p>
-        </div>
-        <div class="dif-card rv" data-delay="4">
-          <span class="dif-num">04</span>
-          <h4>Família como parceira</h4>
-          <p>Mantemos relação próxima com as famílias, oferecendo orientação, escuta e participação ativa durante todo o
-            processo.</p>
-        </div>
-        <div class="dif-card rv" data-delay="1">
-          <span class="dif-num">05</span>
-          <h4>Equipe qualificada</h4>
-          <p>Profissionais escolhidos pela formação e pela sensibilidade, atualizando-se continuamente para oferecer o
-            melhor cuidado.</p>
-        </div>
-        <div class="dif-card rv" data-delay="2">
-          <span class="dif-num">06</span>
-          <h4>Ambiente que acolhe</h4>
-          <p>Um espaço pensado para que crianças, adolescentes e famílias se sintam seguros, respeitados e pertencentes.
-          </p>
-        </div>
-        <div class="dif-card rv" data-delay="3">
-          <span class="dif-num">07</span>
-          <h4>Desenvolvimento com propósito</h4>
-          <p>Mais do que metas terapêuticas, buscamos autonomia, participação e qualidade de vida para cada pessoa.</p>
-        </div>
-        <div class="dif-card rv" data-delay="4">
-          <span class="dif-num">08</span>
-          <h4>Equipe interdisciplinar</h4>
-          <p>Especialidades que dialogam entre si, promovendo um cuidado integrado e mais eficaz para cada criança.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== MISSÃO VISÃO VALORES ===================== -->
-  <section class="mvv" id="valores">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Missão · Visão · Valores</span>
-        <h2 style="color:#fff;">O que guia tudo o que fazemos.</h2>
-        <p>Cada atendimento, cada decisão e cada vínculo que construímos são reflexo do propósito que nos une.</p>
-      </div>
-      <div class="mvv-grid">
-        <div class="mvv-card rv" data-delay="1">
-          <h3>Missão</h3>
-          <p>Fazer do cuidado um encontro entre ciência e humanidade, para que cada pessoa desenvolva suas
-            potencialidades, fortaleça sua autonomia e descubra, todos os dias, que há um lugar onde ela é acolhida,
-            valorizada e pertence.</p>
-        </div>
-        <div class="mvv-card rv" data-delay="2">
-          <h3>Visão</h3>
-          <p>Ser reconhecida por transformar cuidado em significado, construindo um espaço onde o desenvolvimento
-            acontece com excelência e cada conquista reafirma aquilo em que acreditamos: todo ser humano merece crescer
-            sentindo que pertence.</p>
-        </div>
-      </div>
-      <div class="valores-grid">
-        <div class="valor rv" data-delay="1"><span class="valor-ico">🏠</span><strong>Pertencimento</strong><span>Todo
-            ser humano merece ser acolhido e valorizado.</span></div>
-        <div class="valor rv" data-delay="2"><span class="valor-ico">🤝</span><strong>Humanização</strong><span>Cuidamos
-            com sensibilidade, empatia e amorosidade.</span></div>
-        <div class="valor rv" data-delay="3"><span
-            class="valor-ico">⭐</span><strong>Excelência</strong><span>Conhecimento, atualização e compromisso com
-            qualidade.</span></div>
-        <div class="valor rv" data-delay="4"><span class="valor-ico">✨</span><strong>Singularidade</strong><span>Cada
-            trajetória é única e merece ser respeitada.</span></div>
-        <div class="valor rv" data-delay="1"><span
-            class="valor-ico">⚖️</span><strong>Ética</strong><span>Responsabilidade, transparência e integridade em
-            tudo.</span></div>
-        <div class="valor rv" data-delay="2"><span class="valor-ico">💪</span><strong>Compromisso</strong><span>Cuidado
-            intencional e centrado no desenvolvimento.</span></div>
-        <div class="valor rv" data-delay="3"><span class="valor-ico">🔗</span><strong>Colaboração</strong><span>Diálogo
-            entre profissionais, famílias e comunidade.</span></div>
-        <div class="valor rv" data-delay="4"><span
-            class="valor-ico">🌱</span><strong>Esperança</strong><span>Acreditamos no potencial humano em cada
-            conquista.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== DEPOIMENTOS ===================== -->
-  <section class="depoimentos" id="depoimentos">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Depoimentos</span>
-        <h2>O que as famílias dizem sobre a Pertencer.</h2>
-      </div>
-      <div class="dep-grid">
-        <div class="dep-card rv" data-delay="1">
-          <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p>"Desde o primeiro contato me senti acolhida. A equipe cuida do meu filho com uma atenção e sensibilidade
-            que eu nunca tinha visto em outro lugar. O desenvolvimento dele foi surpreendente."</p>
-          <div class="dep-author">
-            <div class="dep-avatar">M</div>
-            <div><strong>Mãe do João, 6 anos</strong><span>Atendimento em Fonoaudiologia</span></div>
-          </div>
-        </div>
-        <div class="dep-card rv" data-delay="2">
-          <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p>"A Pertencer mudou a nossa rotina em família. Além de cuidar da minha filha, as profissionais nos orientam
-            em cada passo, nos fazem sentir parte do processo. É o lugar certo."</p>
-          <div class="dep-author">
-            <div class="dep-avatar">A</div>
-            <div><strong>Família Oliveira</strong><span>Atendimento em Terapia Ocupacional</span></div>
-          </div>
-        </div>
-        <div class="dep-card rv" data-delay="3">
-          <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p>"Meu filho estava com muita dificuldade na escola e, após a avaliação neuropsicológica e o acompanhamento
-            psicopedagógico, hoje ele ama aprender. Gratidão enorme a toda equipe."</p>
-          <div class="dep-author">
-            <div class="dep-avatar">R</div>
-            <div><strong>Pai do Miguel, 9 anos</strong><span>Avaliação Neuropsicológica + Psicopedagogia</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FAQ ===================== -->
-  <section class="faq" id="faq">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Dúvidas frequentes</span>
-        <h2>Perguntas que as famílias costumam fazer.</h2>
-      </div>
-      <div class="faq-grid">
-        <div class="faq-item rv" data-delay="1">
-          <button class="faq-q" aria-expanded="false">
-            Como funciona a primeira consulta?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>O primeiro atendimento é uma avaliação inicial onde o profissional conhece a criança, a família e as
-              principais queixas ou objetivos. A partir daí, é elaborado um plano de cuidado individualizado.</p>
-          </div>
-        </div>
-        <div class="faq-item rv" data-delay="2">
-          <button class="faq-q" aria-expanded="false">
-            Atendem por convênio ou apenas particular?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Atualmente a Pertencer realiza atendimentos particulares. Entre em contato pelo WhatsApp para verificar
-              valores, pacotes e possibilidades de pagamento.</p>
-          </div>
-        </div>
-        <div class="faq-item rv" data-delay="1">
-          <button class="faq-q" aria-expanded="false">
-            A partir de qual idade atendem?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Atendemos bebês, crianças, adolescentes e adultos, dependendo da especialidade. A maioria dos
-              atendimentos é focada no público infantojuvenil, mas entre em contato para verificar casos específicos.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item rv" data-delay="2">
-          <button class="faq-q" aria-expanded="false">
-            O que é a Avaliação Neuropsicológica?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>É uma avaliação especializada das funções cognitivas, emocionais e comportamentais, por meio de testes
-              padronizados. É indicada para diagnóstico de TDAH, TEA, dificuldades de aprendizagem, entre outros.</p>
-          </div>
-        </div>
-        <div class="faq-item rv" data-delay="1">
-          <button class="faq-q" aria-expanded="false">
-            Os pais participam das sessões?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Acreditamos que a família é parceira no processo. Dependendo da especialidade e da faixa etária, os pais
-              podem participar de parte das sessões e recebem orientações regulares ao longo do acompanhamento.</p>
-          </div>
-        </div>
-        <div class="faq-item rv" data-delay="2">
-          <button class="faq-q" aria-expanded="false">
-            Como agendar uma consulta?
-            <span class="faq-arrow">+</span>
-          </button>
-          <div class="faq-a">
-            <p>O agendamento é feito pelo WhatsApp ou pelo formulário de contato nesta página. Nossa equipe retorna o
-              mais breve possível para verificar disponibilidade e orientar os próximos passos.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== CTA STRIP ===================== -->
-  <div class="cta-strip">
-    <div class="wrap rv">
-      <h2>Pronto para dar o primeiro passo?</h2>
-      <p>Fale agora com a nossa equipe pelo WhatsApp. Estamos prontos para ouvir a história de cada família e encontrar
-        o melhor caminho juntos.</p>
-      <a class="btn-p"
-        href="https://wa.me/5521977027638?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Pertencer."
-        target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-          <path
-            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668.11.061.231.09.352.09.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0zm0 21.618c-1.759 0-3.458-.483-4.931-1.396l-.356-.212-3.665 1.197 1.186-3.572-.23-.366C2.95 15.668 2.382 13.877 2.382 12 2.382 6.349 6.95 1.778 12 1.778c5.05 0 9.618 4.571 9.618 10.222 0 5.651-4.568 10.618-9.618 10.618z" />
-        </svg>
-        Falar no WhatsApp agora
-      </a>
+    <div class="foot-bottom">
+      <span>© 2026 Pertencer — Centro de Neurodesenvolvimento e Reabilitação. Todos os direitos reservados.</span>
+      <span>Desenvolvido com 🤍 por <a href="https://visz.dev" target="_blank" rel="noopener">Visz.dev</a></span>
     </div>
   </div>
+</footer>
 
-  <!-- ===================== CONTATO ===================== -->
-  <section class="contato" id="contato">
-    <div class="wrap">
-      <div class="section-head rv">
-        <span class="tag">Entre em contato</span>
-        <h2>Estamos aqui para te acolher.</h2>
-        <p>Fale com a nossa equipe pelos canais abaixo ou preencha o formulário — retornamos em breve.</p>
-      </div>
-      <div class="contato-grid">
-        <div class="info-block rv">
-          <div class="info-row">
-            <div class="info-ic">📍</div>
-            <div>
-              <h5>Endereço</h5>
-              <p>R. Buganvília, 91 — Lote 15, Quadra A, Centro<br>Guapimirim – RJ, 25940-000</p>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-ic">📞</div>
-            <div>
-              <h5>Telefone / WhatsApp</h5>
-              <a href="tel:+5521977027638">+55 21 97702-7638</a>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-ic">✉️</div>
-            <div>
-              <h5>E-mail</h5>
-              <a href="mailto:clinica@pertencer.me">clinica@pertencer.me</a>
-            </div>
-          </div>
-          <div class="info-row">
-            <div class="info-ic">⏰</div>
-            <div>
-              <h5>Agendamento</h5>
-              <p>Via WhatsApp, e-mail ou pelo formulário ao lado</p>
-            </div>
-          </div>
-          <div class="socials">
-            <a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener" aria-label="Instagram"
-              title="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener" aria-label="Facebook"
-              title="Facebook">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-            </a>
-            <a href="https://wa.me/5521977027638" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                <path
-                  d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668.11.061.231.09.352.09.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z" />
-              </svg>
-            </a>
-          </div>
-          <div class="map-wrap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d-42.9887!3d-22.5282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMxJzQxLjYiUyA0MsKwNTknMTkuMyJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Localização da clínica Pertencer"></iframe>
-          </div>
-        </div>
+<!-- WA Float -->
+<a class="wa-float" href="https://wa.me/5521977027638?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668A.75.75 0 00.686 24c.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0zm0 21.618c-1.759 0-3.458-.483-4.931-1.396l-.356-.212-3.665 1.197 1.186-3.572-.23-.366C2.95 15.668 2.382 13.877 2.382 12 2.382 6.349 6.95 1.778 12 1.778c5.05 0 9.618 4.571 9.618 10.222 0 5.651-4.568 10.618-9.618 10.618z"/></svg>
+</a>
 
-        <div class="cform rv" data-delay="1">
-          <h3>Envie uma mensagem</h3>
-          <p class="sub">Preencha abaixo e entraremos em contato o quanto antes.</p>
-          <form id="cForm">
-            <div class="field-row">
-              <div class="field">
-                <label for="f-nome">Nome completo *</label>
-                <input type="text" id="f-nome" name="nome" required placeholder="Seu nome">
-              </div>
-              <div class="field">
-                <label for="f-tel">WhatsApp / Telefone *</label>
-                <input type="tel" id="f-tel" name="tel" required placeholder="(21) 00000-0000">
-              </div>
-            </div>
-            <div class="field">
-              <label for="f-esp">Especialidade de interesse</label>
-              <select id="f-esp" name="esp">
-                <option value="">Selecione...</option>
-                <option>Fonoaudiologia</option>
-                <option>Terapia Ocupacional</option>
-                <option>Fisioterapia</option>
-                <option>Psicologia</option>
-                <option>Psicopedagogia</option>
-                <option>Psicomotricidade</option>
-                <option>Avaliação Neuropsicológica</option>
-                <option>Não sei ainda</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-msg">Mensagem</label>
-              <textarea id="f-msg" name="msg"
-                placeholder="Conte brevemente o que você busca para seu filho(a) ou familiar..."></textarea>
-            </div>
-            <button type="submit" class="submit">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-              </svg>
-              Enviar pelo WhatsApp
-            </button>
-            <p class="fn">Ao enviar, você será redirecionado para o WhatsApp da clínica com sua mensagem pré-preenchida.
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer>
-    <div class="wrap">
-      <div class="foot-top">
-        <div>
-          <div class="foot-logo">
-            <div class="logo-icon" style="width:30px;height:30px;">
-              <svg viewBox="0 0 24 24" style="width:14px;height:14px;" fill="#fff">
-                <path
-                  d="M12 21.7C5.4 17 2 12.9 2 9.5 2 6 4.7 4 7.5 4c1.7 0 3.3.8 4.5 2.1C13.2 4.8 14.8 4 16.5 4 19.3 4 22 6 22 9.5c0 3.4-3.4 7.5-10 12.2z" />
-              </svg>
-            </div>
-            Pertencer
-          </div>
-          <p class="foot-desc">Centro de Neurodesenvolvimento e Reabilitação. Cuidado individualizado e baseado em
-            evidências para crianças, adolescentes e suas famílias em Guapimirim – RJ.</p>
-          <div class="foot-soc">
-            <a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-            </a>
-            <a href="https://wa.me/5521977027638" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                <path
-                  d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668.11.061.231.09.352.09.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="foot-col">
-          <h5>Navegação</h5>
-          <ul>
-            <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#areas">Especialidades</a></li>
-            <li><a href="#equipe">Nossa equipe</a></li>
-            <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#valores">Missão e valores</a></li>
-            <li><a href="#faq">Dúvidas frequentes</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <h5>Contato</h5>
-          <ul>
-            <li><a href="tel:+5521977027638">+55 21 97702-7638</a></li>
-            <li><a href="mailto:clinica@pertencer.me">clinica@pertencer.me</a></li>
-            <li><a href="https://www.instagram.com/pertencerme" target="_blank" rel="noopener">@pertencerme</a></li>
-            <li><a href="https://www.facebook.com/pertencerme/" target="_blank" rel="noopener">Facebook</a></li>
-          </ul>
-          <h5 style="margin-top:22px;">Endereço</h5>
-          <ul>
-            <li style="color:#9A948E;font-size:.85rem;line-height:1.6;">R. Buganvília, 91 — Lote 15<br>Quadra A,
-              Centro<br>Guapimirim – RJ, 25940-000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="foot-bottom">
-        <span>© 2026 Pertencer — Centro de Neurodesenvolvimento e Reabilitação. Todos os direitos reservados.</span>
-        <span>Desenvolvido com 🤍 por <a href="https://visz.dev" target="_blank" rel="noopener">Visz.dev</a></span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WA Float -->
-  <a class="wa-float"
-    href="https://wa.me/5521977027638?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos."
-    target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 24 24">
-      <path
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-      <path
-        d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.856L.057 23.625c-.072.261.04.538.277.668.11.061.231.09.352.09.094 0 .188-.022.275-.065L6.74 21.91C8.417 22.86 10.147 23.385 12 23.385 18.627 23.385 24 18.012 24 12S18.627 0 12 0zm0 21.618c-1.759 0-3.458-.483-4.931-1.396l-.356-.212-3.665 1.197 1.186-3.572-.23-.366C2.95 15.668 2.382 13.877 2.382 12 2.382 6.349 6.95 1.778 12 1.778c5.05 0 9.618 4.571 9.618 10.222 0 5.651-4.568 10.618-9.618 10.618z" />
-    </svg>
-  </a>
+<script src="script.js"></script>
 </body>
-
 </html>
