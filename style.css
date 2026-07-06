@@ -726,12 +726,16 @@ nav ul li a:hover::after {
   overflow: hidden;
   border: 4px solid #fff;
   box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .2);
-  background: #fff;
+  background: var(--pink);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sobre-logo img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
 }
 
@@ -1038,6 +1042,14 @@ nav ul li a:hover::after {
 
 .team-card:nth-child(6) .team-spec-tag {
   background: var(--blue);
+}
+
+.team-card:nth-child(7) .team-spec-tag {
+  background: var(--lavender);
+}
+
+.team-card:nth-child(8) .team-spec-tag {
+  background: var(--orange);
 }
 
 .team-info {
