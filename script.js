@@ -57,11 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Smooth scroll ──────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         const top = target.getBoundingClientRect().top + window.scrollY - 80;
         window.scrollTo({ top, behavior: 'smooth' });
+        // Atualiza a URL para exibir o link da seção (ex: www.dominio.com/#sobre)
+        if (history.pushState) {
+          history.pushState(null, '', href);
+        } else {
+          window.location.hash = href;
+        }
       }
     });
   });
